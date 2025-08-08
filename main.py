@@ -10,16 +10,16 @@ from telebot.apihelper import ApiTelegramException
 from pymongo import MongoClient
 
 # Initialize MongoDB connection
-MONGO_URI = os.getenv("mongodb+srv://takkishor9784:gG73juoh44MnvJEZ@cluster0.q8hxdk2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_URI = os.getenv("")
 client = MongoClient(MONGO_URI)
 db = client["studyhub"]
 user_collection = db["studyhub"]  
 
 
 OWNER = 7623178784 
-API_ID = os.getenv("API_ID", "24852999")
-API_HASH = os.getenv("API_HASH", "af27dc6de045fa54994453cb2d2316c1")
-TOKEN = os.environ["8202704323:AAF-J6nXJrDlonLzPsbdWkI5oRQt52TVlVg"]
+API_ID = os.getenv("API_ID", "")
+API_HASH = os.getenv("API_HASH", "")
+TOKEN = os.environ[""]
 
 bot = telebot.TeleBot(TOKEN)
 bot.remove_webhook()
